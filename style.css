@@ -71,19 +71,6 @@
     background-position: center;
 }
 
-.block-dis {
-    animation: disapear 0.5s linear;
-}
-
-@keyframes disapear {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 .choose-time {
     display: flex;
     flex-direction: column;
