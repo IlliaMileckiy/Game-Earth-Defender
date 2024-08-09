@@ -50,12 +50,9 @@ function spawnBlock(block) {
 function destroyBlock(block, res) {
     block.addEventListener("click", (event) => {
         event.stopPropagation();
-        block.className += " block-dis";
+        block.remove()
         points.textContent = +points.textContent + 10;
-        setTimeout(() => {
-            block.remove()
-            res()
-        }, 400);
+        res()
     });
 }
 function createRounds() {
